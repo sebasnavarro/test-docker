@@ -49,6 +49,26 @@ Etiqueta la imagen para su publicación en un repositorio (sustituye sebasnavarr
 Publica la imagen en un registro remoto, como Docker Hub:
 
   `docker push sebasnavarro/myapp:v1`
+
+***
+## Descargar imagen desde un servidor de docker
+
+## 1. Iniciamos sesion en docker
+
+  `docker login`
+
+## 2. Tirar la imagen desde Docker Hub
+
+  `docker pull sebasnavarro/myapp:v1 `
+
+## 3. Ejecutar el contenedor en el servidor
+
+  `docker run -d -p 8080:8080 --name my-api sebasnavarro/myapp:v1 `
+
+## 4. Verificamos si el contenedor esta corriendo
+
+  `docker ps`
+
 ***
 ## Datos Adicionales
 
@@ -72,6 +92,8 @@ Esto mapea el puerto 8080 del host al puerto 8080 del contenedor.
 Para verificar qué contenedores están activos:
 
 `docker ps`
+
+
 
 Para ver todos los contenedores (activos e inactivos):
 
