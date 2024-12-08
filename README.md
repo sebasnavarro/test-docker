@@ -72,6 +72,7 @@ Esto mapea el puerto 8080 del host al puerto 8080 del contenedor.
 Para verificar qué contenedores están activos:
 
 `docker ps`
+
 Para ver todos los contenedores (activos e inactivos):
 
 `docker ps -a`
