@@ -38,7 +38,7 @@ Construye la imagen Docker utilizando el archivo Dockerfile existente en el proy
 ## 4. Ejecución de la imagen Docker
 Inicia un contenedor basado en la imagen creada:
 
-  `docker run -d --name my-api api-test/web`
+  `docker run -d -p 8080:8080 --name my-api api-test/web`
 
 ## 5. Etiquetado de la imagen
 Etiqueta la imagen para su publicación en un repositorio (sustituye sebasnavarro y myapp por tus valores):
